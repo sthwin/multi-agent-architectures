@@ -22,6 +22,8 @@ def make_agent(prompt, tools):
             f"""
         {prompt}
         
+        You have a tool called 'handoff_tool' use it to transfer to other agent, don't use it to transfer to yourself.
+        
         Conversation History:
         {state["messages"]}
         """
